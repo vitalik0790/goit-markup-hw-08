@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: #ffffff;
+  color: $primary-text-color;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  /* max-width: 1600px; */
+}

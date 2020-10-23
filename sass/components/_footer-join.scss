@@ -1,0 +1,30 @@
+.footer-join {
+  width: 206px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link:hover,
+  &__link:hover {
+    background-color: $text-hover-focus;
+    transition: 250ms $time-distribution-function;
+  }
+
+  &__icon {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+  }
+}

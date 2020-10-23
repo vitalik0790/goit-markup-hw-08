@@ -1,0 +1,22 @@
+.footer {
+  background: $main-footer-background-color;
+  padding: 60px;
+  padding-top: 60px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,60 @@
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+
+  &__webstudio {
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196f3;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    color: $white-color;
+  }
+
+  &__street {
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    margin-bottom: 9px;
+  }
+
+  &__info {
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    color: $footer-text;
+  }
+
+  &__mail {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+
+  &__adress {
+    display: flex;
+    flex-direction: column;
+  }
+}

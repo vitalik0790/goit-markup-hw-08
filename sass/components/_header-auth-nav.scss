@@ -1,0 +1,41 @@
+.auth-nav {
+  &__item {
+    color: $primary-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    color: $text-hover-focus;
+    transition: 250ms $time-distribution-function;
+  }
+
+  & {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item_tel {
+    margin-left: 50px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: $primary-text-color;
+  }
+
+  &__item:hover &__icon {
+    fill: $text-hover-focus;
+    transition: 250ms $time-distribution-function;
+  }
+}

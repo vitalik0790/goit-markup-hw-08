@@ -1,0 +1,46 @@
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    border-color: #2196f3;
+  }
+
+  &__icon {
+    fill: rgba(175, 177, 184, 1);
+  }
+
+  &__item:hover &__icon,
+  &__item:focus &__icon {
+    fill: $text-hover-focus;
+    transition: 250ms $time-distribution-function;
+  }
+}
