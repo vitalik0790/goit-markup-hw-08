@@ -2,31 +2,69 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 94px;
+      padding-bottom: 47px;
+    }
+  }
+
   &__list {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__item {
-    width: 270px;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 450px;
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__item {
+      width: 354px;
+    }
+
+    &__item:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item {
+      width: 270px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     color: $title-text-color;
-  }
-
-  &__info {
-    color: $primary-text-color;
-  }
-
-  &__title {
+    text-align: center;
     margin-bottom: 10px;
     font-style: normal;
     font-weight: bold;
@@ -36,7 +74,14 @@
     text-transform: uppercase;
   }
 
+  @media screen and (min-width: 768px) {
+    &__title {
+      text-align: start;
+    }
+  }
+
   &__info {
+    color: $primary-text-color;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -47,12 +92,24 @@
 
   &__svg {
     height: 120px;
-    width: 270px;
+    width: 450px;
     border-radius: 4px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(245, 244, 250, 1);
+  }
+
+  @media screen and (min-width: 768px) {
+    &__svg {
+      width: 354px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__svg {
+      width: 270px;
+    }
   }
 }
