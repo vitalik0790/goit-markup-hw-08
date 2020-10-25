@@ -191,8 +191,7 @@ body {
 
 /* Секция-герой */
 .hero {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #c4c4c4;
@@ -207,7 +206,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("/img/icons8dz/hero/thero.jpg");
     background-size: cover;
@@ -221,9 +220,8 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -241,7 +239,6 @@ body {
 }
 
 .hero__content {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -296,8 +293,8 @@ body {
 }
 
 .qualities {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .qualities__list {
