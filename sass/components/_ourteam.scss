@@ -1,17 +1,32 @@
 .ourteam {
   background: rgba(245, 244, 250, 1);
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-bottom: 94px;
+      padding-top: 94px;
+    }
+  }
 
   &__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: $title-text-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__title {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
   }
 
   &__section-title {
@@ -36,13 +51,28 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__item {
     display: block;
-    width: 370px;
+    width: 450px;
     /* height: 368px; */
     background: #ffffff;
     /* material shadow v1 */
@@ -53,8 +83,34 @@
     padding-bottom: 30px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__item {
+      width: 354px;
+    }
+
+    &__item:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item {
+      width: 270px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 
   &__social-list {
