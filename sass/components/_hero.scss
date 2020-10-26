@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.5),
       rgba(47, 48, 58, 0.5)
     ),
-    url("/img/hero/mhero.jpg");
+    url("../../img/hero/mhero.jpg");
   background-size: cover;
   background-position: center;
 
@@ -17,7 +17,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     & {
-      background-image: url("/img/hero/mhero@2x.jpg");
+      background-image: url("../../img/hero/mhero@2x.jpg");
     }
   }
 
