@@ -12,6 +12,7 @@
   @media screen and (min-widht: 1200px) {
     &__container {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
     }
