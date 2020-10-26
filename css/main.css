@@ -509,11 +509,19 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+  color: #212121;
 }
 
 .ourteam__section-info {
   text-align: center;
   margin-bottom: 16px;
+  color: #757575;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .ourteam__img {
@@ -699,14 +707,22 @@ body {
 
 .footer {
   background: #2f303a;
-  padding: 60px;
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-widht: 1200px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer__title {
@@ -723,6 +739,8 @@ body {
 .footer-contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
+  align-items: center;
 }
 
 .footer-contacts__webstudio {
@@ -777,8 +795,16 @@ body {
   flex-direction: column;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-contacts__adress {
+    text-align: center;
+  }
+}
+
 .footer-join {
   width: 206px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .footer-join__list {
@@ -807,14 +833,25 @@ body {
   height: 20px;
 }
 
+.footer-subscribe {
+  text-align: center;
+}
+
 .footer-subscribe__form {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    flex-direction: row;
+  }
 }
 
 .footer-subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -823,6 +860,18 @@ body {
   background: transparent;
   padding-left: 16px;
   color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-subscribe__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    width: 358px;
+  }
 }
 
 .footer-subscribe__btn {
