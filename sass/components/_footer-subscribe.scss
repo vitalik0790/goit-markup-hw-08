@@ -1,6 +1,12 @@
 .footer-subscribe {
   text-align: center;
 
+  @media screen and (min-width: 1200px) {
+    & {
+      text-align: left;
+    }
+  }
+
   &__form {
     display: flex;
     justify-content: center;
@@ -9,7 +15,10 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
+    &__form {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   &__input {
@@ -31,7 +40,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 358px;
+    &__input {
+      width: 358px;
+    }
   }
 
   &__btn {

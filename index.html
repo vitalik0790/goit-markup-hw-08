@@ -468,7 +468,22 @@
             </form>
         </div>
       </div>
-<script src="./js/modal.js"></script>
+
+      <script>
+        (() => {
+          document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+        })();
+      </script>
+      <script src="./js/btn-menu.js"></script>
+      <script src="./js/modal.js"></script>
 
   </body>
 </html>

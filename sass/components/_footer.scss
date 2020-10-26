@@ -9,7 +9,17 @@
     align-items: center;
   }
 
-  @media screen and (min-widht: 1200px) {
+  @media screen and (min-width: 768px) {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: baseline;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     &__container {
       display: flex;
       flex-direction: row;
