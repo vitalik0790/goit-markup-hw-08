@@ -32,6 +32,12 @@
     z-index: 1;
   }
 
+  @media screen and (max-width: 767px) {
+    &__logo {
+      z-index: 0;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     &__logo {
       margin-right: 88px;
