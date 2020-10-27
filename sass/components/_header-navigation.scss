@@ -1,7 +1,14 @@
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   &__list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 294px;
+    margin-bottom: 60px;
   }
 
   &__link {
@@ -14,8 +21,12 @@
     text-decoration: none;
     position: relative;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 40px;
   }
 
   &__link_special {
@@ -33,7 +44,7 @@
     position: absolute;
     display: block;
     left: 0;
-    bottom: -0.3px;
+    top: 20px;
     width: 100%;
     height: 4px;
 
@@ -64,7 +75,7 @@
     transition: 250ms $time-distribution-function;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // &__item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }

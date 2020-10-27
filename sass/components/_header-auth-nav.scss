@@ -1,4 +1,8 @@
 .auth-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__item {
     color: $primary-text-color;
     text-decoration: none;
@@ -14,20 +18,19 @@
     transition: 250ms $time-distribution-function;
   }
 
-  & {
-    display: flex;
-    margin-left: auto;
-  }
-
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__item_tel {
-    margin-left: 50px;
+  &__item_email {
+    margin-bottom: 16px;
   }
+
+  // &__item_tel {
+  //   margin-left: 50px;
+  // }
 
   &__icon {
     margin-right: 10px;

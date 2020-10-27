@@ -16,38 +16,42 @@
 
       <header class="header">
         <div class="header__container container">
-          
-            <nav navigation>
+          <nav class="navigation">
             <a class="header__logo" href="./index.html" aria-label="логотип">Web<span class="header__studio">Studio</span></a>
-              <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                  <use class="icon-close" href="./img/icons/sprite.svg#closemenu"></use>
-                  <use class="icon-menu" href="./img/icons/sprite.svg#openmenu"></use>
-                </svg>
-              </button>
-
+            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container"
+              data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-close" href="./img/icons/sprite.svg#closemenu"></use>
+                <use class="icon-menu" href="./img/icons/sprite.svg#openmenu"></use>
+              </svg>
+            </button>
+            <div class="menu-container" data-menu>
               <ul class="navigation__list list">
                 <li class="navigation__item"><a href="./index.html"
                     class="navigation__link">Студия</a></li>
-                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link navigation__link_special">Портфолио</a></li>
-                <li class="navigation__item"><a href="#Контакты" class="navigation__link">Контакты</a></li>
+                <li class="navigation__item"><a href="./portfolio.html" 
+                    class="navigation__link navigation__link_special">Портфолио</a></li>
+                <li class="navigation__item"><a href="#Контакты" 
+                    class="navigation__link">Контакты</a></li>
               </ul>
-                 
-            <ul class="auth-nav list">
-              <li><a href="mailto:info@devstudio.com" class="auth-nav__item auth-nav__item_email">
-                  <svg class="auth-nav__icon" width="16px" height="12">
-                    <use href="./img/icons/sprite.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a></li>
-              <li><a href="tel:+380961111111" class="auth-nav__item auth-nav__item_tel">
-                  <svg class="auth-nav__icon" width="16px" height="12">
-                    <use href="./img/icons/sprite.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a></li>
-            </ul>
-            </nav>
-          </div>
-        
+      
+              <ul class="auth-nav list">
+                <li><a href="mailto:info@devstudio.com" class="auth-nav__item auth-nav__item_email">
+                    <svg class="auth-nav__icon" width="16px" height="12">
+                      <use href="./img/icons/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li><a href="tel:+380961111111" class="auth-nav__item auth-nav__item_tel">
+                    <svg class="auth-nav__icon" width="16px" height="12">
+                      <use href="./img/icons/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
 
       <main class="main">
@@ -326,5 +330,8 @@
       
         </div>
       </footer>
+
+      <script src="./js/btn-menu.js"></script>
+
   </body>
 </html>
