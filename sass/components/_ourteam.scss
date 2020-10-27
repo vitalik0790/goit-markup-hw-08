@@ -55,6 +55,7 @@
   }
 
   &__img {
+    width: 100%;
     margin-bottom: 30px;
   }
 
@@ -80,7 +81,7 @@
 
   &__item {
     display: block;
-    width: 450px;
+    width: 100%;
     /* height: 368px; */
     background: #ffffff;
     /* material shadow v1 */
