@@ -1475,6 +1475,12 @@ body {
   padding: 63px 24px;
 }
 
+@media screen and (max-width: 480px) {
+  .projects__paragraph {
+    padding: 24px 24px;
+  }
+}
+
 .projects__item:hover .projects__paragraph,
 .projects__item:focus .projects__paragraph {
   transform: translateY(0);

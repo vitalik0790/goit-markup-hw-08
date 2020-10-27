@@ -91,6 +91,12 @@
     padding: 63px 24px;
   }
 
+  @media screen and (max-width: 480px) {
+    &__paragraph {
+      padding: 24px 24px;
+    }
+  }
+
   &__item:hover &__paragraph,
   &__item:focus &__paragraph {
     transform: translateY(0);
