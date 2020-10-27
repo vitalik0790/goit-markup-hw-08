@@ -127,6 +127,11 @@ body {
   }
 }
 
+.menu-button .menu-svg:hover,
+.menu-button .menu-svg:focus {
+  fill: #2196f3;
+}
+
 .menu-button .icon-close {
   display: none;
 }

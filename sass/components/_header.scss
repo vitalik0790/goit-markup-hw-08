@@ -68,6 +68,11 @@
     }
   }
 
+  .menu-svg:hover,
+  .menu-svg:focus {
+    fill: $text-hover-focus;
+  }
+
   & .icon-close {
     display: none;
   }
