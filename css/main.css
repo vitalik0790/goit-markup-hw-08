@@ -58,10 +58,22 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 677px) {
+  .header {
+    position: relative;
+  }
+}
+
+.header__container {
+  width: 100%;
 }
 
 .header__logo {
-  width: 145px;
+  width: 134px;
   height: 31px;
   color: #000000;
   text-decoration: none;
@@ -72,16 +84,22 @@ body {
   line-height: 1.19;
   /* identical to box height */
   letter-spacing: 0.03em;
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    width: 145px;
+  }
 }
 
 .header__studio {
   color: #2196f3;
 }
 
-.header__container {
+.navigation {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -106,12 +124,24 @@ body {
 }
 
 .menu-container {
+  padding: 20px;
+}
+
+.menu-container {
+  display: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  text-align: center;
-  padding: 60px auto;
+  background: tomato;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .navigation__list {
@@ -912,7 +942,7 @@ body {
 }
 
 .footer-subscribe__input {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
