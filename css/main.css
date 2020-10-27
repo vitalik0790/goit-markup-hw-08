@@ -1131,7 +1131,6 @@ body {
 }
 
 .modal {
-  max-width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1143,7 +1142,14 @@ body {
   padding-bottom: 40px;
   padding-right: 40px;
   padding-left: 40px;
+  width: 100%;
   /* СЕКЦІЯ КНОПКИ */
+}
+
+@media screen and (min-width: 481px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1253,10 +1259,10 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   padding-bottom: 30px;
-  text-align: right;
+  text-align: left;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
